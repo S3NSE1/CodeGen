@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Cyberpunks';
+    src: url("./Cyberpunks.ttf");
+}
+
+.body{
+background-image: url('./LW.svg');
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+}
+
+.col {
+ display: flex;
+ align-items: center;
+ min-width: calc(100% / 3);
+ margin: 5px;
+}
+
+.giantCol {
+ display: flex;
+ align-items: center;
+ min-width: calc(100% / 3);
+ margin: 32%;
+}
+
+.resulteDiv{
+ font-family: 'Cyberpunks';
+ font-size: 20px;
+ text-align:center;
+ color: #ff6afc;
+ -webkit-text-stroke: 1px black;
+ padding: 10px;
+}
+
+.mainHead{
+ font-family: 'Cyberpunks';
+ font-size: 50px;
+ text-align:center;
+ color: #af6aff;
+ -webkit-text-stroke: 2px black;
+}
+
+.footer{
+ font-family: 'Cyberpunks';
+ font-size: 15px;
+ text-align:center;
+ color: #af6aff;
+ -webkit-text-stroke: 1px black;
+ cursor: pointer;
+ text-align:center;
+}
+
+.footerLink{
+ font-family: 'Cyberpunks';
+ font-size: 15px;
+ color: #af6aff;
+ -webkit-text-stroke: 1px black;
+ cursor: pointer;
+ display: block;
+  text-align: center;
+ }
+
+.commonDiv{
+ font-family: 'Cyberpunks';
+ font-size: 20px;
+ text-align:center;
+ color: #af6aff;
+ -webkit-text-stroke: 1px black;
+ padding: 10px;
+}
+.commonDivSmall{
+ font-family: 'Cyberpunks';
+ font-size: 15px;
+ text-align:center;
+ color: #af6aff;
+ -webkit-text-stroke: 1px black;
+ padding: 10px;
+}
+
+.mainBut{
+ font-family: 'Cyberpunks';
+ text-align:center;
+ -webkit-text-stroke: 1px black;
+ max-hight: 30px;
+ max-width: 80px;
+ hight: 100%;
+ width: 100%;
+ margin: 5px;
+ color: #af6aff;
+ margin-color: #424242;
+ border-color: #af6aff;
+ border-size: 1px;
+ cursor: pointer;
+ text-align:center;
+ margin: auto;
+ display: flex;
+ background-color: black;
+ 
+}
+
+.mainInput{
+ font-family: 'Cyberpunks';
+ text-align:center;
+ -webkit-text-stroke: 1px black;
+ max-hight: 30px;
+ max-width: 200px;
+ hight: 100%;
+ width: 100%;
+ margin: 10px;
+ color: #af6aff;
+ margin-color: #424242;
+ border-color: #af6aff;
+ border-size: 1px;
+ cursor: pointer;
+ text-align:center;
+ margin: auto;
+ display: flex;
+ background-color: black;
+}
+
+.hider{
+display: none;
+}
+
