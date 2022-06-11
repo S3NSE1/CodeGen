@@ -75,7 +75,7 @@ const openGen = () => {
  
  return (is4, is5, is6, is7, is8)
  
-} leChifreFinal()         //<---ФУНКЦИЯ
+} leChifreFinal()         
  
  function openCodeShow(){
  let hh = 
@@ -91,8 +91,8 @@ const openGen = () => {
  document.getElementById("ret").innerHTML="Your uniqe code is: "+ hh.k1 +"-"+ hh.k2 +"-"+ hh.k3 +"-"+ 
  hh.k4 +"-"+ hh.k5 +"-"+ hh.k6 +"-"+ hh.k7 +"-"+ hh.k8;
    
- } openCodeShow()        //<---ФУНКЦИЯ
+ } openCodeShow()        
 }
-// у нас есть 3 функции
-//  leChifreFinal шифрует
-// openCodeShow отображает и фильтрует ошибки
+
+
+
