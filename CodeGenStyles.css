@@ -1,48 +1,46 @@
-@font-face {
-    font-family: 'Cyberpunks';
-    src: url("./Cyberpunks.ttf");
-}
 
+@font-face{
+    font-family: "DD";
+    src: url("./Fonts/AkiraED.otf");
+}
+@font-face{
+    font-family: "Prism";
+    src: url("./Fonts/prismfont_CLv3.ttf");
+}
 .body{
-background-image: url('./LW.svg');
+background-image: url("./Styles/LW.svg");
 background-repeat: no-repeat;
-background-position: center center;
+background-position: top;
 background-attachment: fixed;
 }
-
 .col {
  display: flex;
  align-items: center;
  min-width: calc(100% / 3);
  margin: 5px;
 }
-
 .giantCol {
  display: flex;
  align-items: center;
  min-width: calc(100% / 3);
  margin: 32%;
 }
-
 .resulteDiv{
- font-family: 'Cyberpunks';
+ font-family: 'DD';
  font-size: 20px;
  text-align:center;
- color: #ff6afc;
+ color: #af6aff;
  -webkit-text-stroke: 1px black;
  padding: 10px;
 }
-
 .mainHead{
- font-family: 'Cyberpunks';
+ font-family: 'Prism';
  font-size: 50px;
  text-align:center;
  color: #af6aff;
- -webkit-text-stroke: 2px black;
 }
-
 .footer{
- font-family: 'Cyberpunks';
+ font-family: 'DD';
  font-size: 15px;
  text-align:center;
  color: #af6aff;
@@ -50,19 +48,17 @@ background-attachment: fixed;
  cursor: pointer;
  text-align:center;
 }
-
 .footerLink{
- font-family: 'Cyberpunks';
+ font-family: 'DD';
  font-size: 15px;
  color: #af6aff;
  -webkit-text-stroke: 1px black;
  cursor: pointer;
  display: block;
-  text-align: center;
+ text-align: center;
  }
-
 .commonDiv{
- font-family: 'Cyberpunks';
+ font-family: 'DD';
  font-size: 20px;
  text-align:center;
  color: #af6aff;
@@ -70,7 +66,7 @@ background-attachment: fixed;
  padding: 10px;
 }
 .commonDivSmall{
- font-family: 'Cyberpunks';
+ font-family: 'DD';
  font-size: 15px;
  text-align:center;
  color: #af6aff;
@@ -79,47 +75,43 @@ background-attachment: fixed;
 }
 
 .mainBut{
- font-family: 'Cyberpunks';
+ font-family: 'DD';
+ font-size: 10px;
  text-align:center;
  -webkit-text-stroke: 1px black;
- max-hight: 30px;
- max-width: 80px;
+ max-hight: 40px;
+ max-width: 100px;
  hight: 100%;
  width: 100%;
  margin: 5px;
  color: #af6aff;
  margin-color: #424242;
- border-color: #af6aff;
+ border-color: black;
  border-size: 1px;
+ border-radius: 8px;
  cursor: pointer;
  text-align:center;
  margin: auto;
  display: flex;
- background-color: black;
- 
+ background-color: #8515ff;
 }
-
 .mainInput{
- font-family: 'Cyberpunks';
+ font-family: 'DD';
  text-align:center;
  -webkit-text-stroke: 1px black;
- max-hight: 30px;
- max-width: 200px;
+ max-hight: 100px;
+ max-width: 250px;
  hight: 100%;
  width: 100%;
  margin: 10px;
  color: #af6aff;
  margin-color: #424242;
- border-color: #af6aff;
+ border-color: black;
  border-size: 1px;
+ border-radius: 6px;
  cursor: pointer;
  text-align:center;
  margin: auto;
  display: flex;
- background-color: black;
+ background-color: #8515ff;
 }
-
-.hider{
-display: none;
-}
-
