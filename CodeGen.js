@@ -1,26 +1,34 @@
 const openGen = () => {
- let login= document.getElementById("logInput").value;
+ let login= document.getElementById("logInput").value.trim();
  let password= document.getElementById("pasInput").value;
  
  function leChifre(){
  login.split("")
  password.split("")
  
- var lec1 = parseInt(password[0]) +
+ var lec1 = parseInt(password[3]) +
+            parseInt(password[4]) + 17;
+ var lec2 = parseInt(password[1]) +
+            parseInt(password[2]) + 13;
+ var lec3 = login.length + 
+            parseInt(password[5]) + 7;
+ var lec4 = parseInt(password[0]) +
+            parseInt(password[2]) +
+            13 - login.length;
+ var lec5 = parseInt(password[3]) +
+            parseInt(password[4]) * 2
+ var lec6 = parseInt(password[2]) +
+            parseInt(password[4]) +
+            parseInt(password[5]) +
+            parseInt(password[0]) * 3
+ var lec7 = parseInt(password[1]) +
+            parseInt(password[2]) * 5
+ var lec8 = parseInt(password[0]) +
             parseInt(password[1]) +
             parseInt(password[2]) +
             parseInt(password[3]) +
             parseInt(password[4]) +
             parseInt(password[5]);
- var lec2 = parseInt(password.length) + lec1;
- var lec3 = parseInt(login.length + lec2 + lec1);
- var lec4 = parseInt(login.length + lec2 + lec1 * 3 /7)
- var lec5 = parseInt(lec1 *15/8)
- var lec6 = parseInt(lec2 + lec4 / lec3 - lec2)
- var lec7 = parseInt(lec1 *15/7);
- var lec8 = parseInt(password[0]) +
-            parseInt(password[1]) +
-            parseInt(password[2]) + lec1
   
  let keyss =[
  is4 ={
@@ -86,6 +94,8 @@ return (is4, is5, is6, is7, is8)
    
  login.length > 8 ? document.getElementById("ret").innerHTML="Login should be less then 8 characters" :
  login.length < 4 ? document.getElementById("ret").innerHTML="Login should be more then 4 characters":
+// login = ? document.getElementById("ret").innerHTML="Enter login":
+ password === "000000" ? document.getElementById("ret").innerHTML="Password can't be 000000":
  password.length != 6 ? document.getElementById("ret").innerHTML="Password should be 6 numbers":
  document.getElementById("ret").innerHTML="Your uniqe code is: "+ hh.k1 +"-"+ hh.k2 +"-"+ hh.k3 +"-"+ 
  hh.k4 +"-"+ hh.k5 +"-"+ hh.k6 +"-"+ hh.k7 +"-"+ hh.k8;
