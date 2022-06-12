@@ -35,7 +35,7 @@ const openGen = () => {
  k1 :login[0] = lec2,
  k2: login[1] = lec1,
  k3: login[2] = lec3,
- k4: login[3] = lec1,
+ k4: login[3] = lec4,
  k5: lec5,
  k6: lec6,
  k7: lec7,
@@ -45,8 +45,8 @@ const openGen = () => {
  k1 :login[0] = lec2,
  k2: login[1] = lec1,
  k3: login[2] = lec3,
- k4: login[3] = lec1,
- k5 :login[4] = lec2,
+ k4: login[3] = lec4,
+ k5: login[4] = lec2,
  k6: lec6,
  k7: lec7,
  k8: lec8
@@ -55,9 +55,9 @@ const openGen = () => {
  k1 :login[0] = lec2,
  k2: login[1] = lec1,
  k3: login[2] = lec3,
- k4: login[3] = lec1,
- k5 :login[4] = lec2,
- k6: login[5] = lec1,
+ k4: login[3] = lec4,
+ k5: login[4] = lec6,
+ k6: login[5] = lec5,
  k7: lec7,
  k8: lec8
  },
@@ -65,26 +65,29 @@ const openGen = () => {
  k1 :login[0] = lec2,
  k2: login[1] = lec1,
  k3: login[2] = lec3,
- k4: login[3] = lec1,
- k5 :login[4] = lec2,
- k6: login[5] = lec1,
- k7: login[6] = lec3,
- k8: lec8
+ k4: login[3] = lec7,
+ k5: login[4] = lec5,
+ k6: login[5] = lec4,
+ k7: login[6] = lec6,
+ k8: lec8 
  },
  is8 ={
  k1 :login[0] = lec2,
  k2: login[1] = lec1,
  k3: login[2] = lec3,
- k4: login[3] = lec1,
- k5 :login[4] = lec2,
- k6: login[5] = lec1,
- k7: login[6] = lec3,
- k8: login[7] = lec1 
+ k4: login[3] = lec8,
+ k5: login[4] = lec4,
+ k6: login[5] = lec7,
+ k7: login[6] = lec5,
+ k8: login[7] = lec6 
  }]
-return (is4, is5, is6, is7, is8)
+ return (is4, is5, is6, is7, is8)
 } leChifre()        
  
- function openCodeShow(){
+function openCodeShow(){
+ let ret = document.getElementById("ret")
+ let code = document.getElementById("code")
+           
  let hh = 
    login.length === 4 ? is4 :
    login.length === 5 ? is5 :
@@ -92,12 +95,22 @@ return (is4, is5, is6, is7, is8)
    login.length === 7 ? is7 :
    login.length === 8 ? is8 : NaN 
    
- login.length > 8 ? document.getElementById("ret").innerHTML="Login should be less then 8 characters" :
- login.length < 4 ? document.getElementById("ret").innerHTML="Login should be more then 4 characters":
-// login = ? document.getElementById("ret").innerHTML="Enter login":
- password === "000000" ? document.getElementById("ret").innerHTML="Password can't be 000000":
- password.length != 6 ? document.getElementById("ret").innerHTML="Password should be 6 numbers":
- document.getElementById("ret").innerHTML="Your uniqe code is: "+ hh.k1 +"-"+ hh.k2 +"-"+ hh.k3 +"-"+ 
- hh.k4 +"-"+ hh.k5 +"-"+ hh.k6 +"-"+ hh.k7 +"-"+ hh.k8;
+ if(login.length > 8){
+  document.getElementById("code").style.display="none";
+  ret.innerHTML ="Login should be less then 8 characters"
+ } else if(login.length < 4){
+  document.getElementById("code").style.display="none"
+  ret.innerHTML ="Login should be more then 4 characters"
+ } else if(password === "000000"){
+  document.getElementById("code").style.display="none"
+  ret.innerHTML ="Password can't be 000000"
+ } else if(password.length != 6){
+  document.getElementById("code").style.display="none"
+  ret.innerHTML ="Password should be 6 numbers"
+ } else {
+  ret.innerHTML="Your uniqe code is: "
+  document.getElementById("code").style.display="block";
+  code.innerHTML =hh.k1 +"-"+ hh.k2 +"-"+ hh.k3 +"-"+ hh.k4 +"-"+ hh.k5 +"-"+ hh.k6 +"-"+ hh.k7 +"-"+ hh.k8;
+ }
  } openCodeShow()     
 } 
