@@ -1,13 +1,13 @@
 @font-face{
     font-family: "DD";
-    src: url("./Fonts/AkiraED.otf");
+    src: url("Fonts/AkiraED.otf");
 }
 @font-face{
     font-family: "Prism";
-    src: url("./Fonts/prismfont_CLv3.ttf");
+    src: url("Fonts/prismfont_CLv3.ttf");
 }
 .body{
-background-image: url("./Styles/LW.svg");
+background-image: url("Styles/LW.svg");
 background-repeat: no-repeat;
 background-position: top;
 background-attachment: fixed;
@@ -33,12 +33,14 @@ padding: 10px;
  color: #af6aff;
  -webkit-text-stroke: 1px black;
  padding: 10px;
+ cursor: default;
 }
 .mainHead{
  font-family: 'Prism';
  font-size: 50px;
  text-align:center;
  color: #af6aff;
+ cursor: default;
 }
 .footer{
  font-family: 'DD';
@@ -65,6 +67,7 @@ padding: 10px;
  color: #af6aff;
  -webkit-text-stroke: 1px black;
  padding: 10px;
+ cursor: default;
 }
 .commonDivSmall{
  font-family: 'DD';
@@ -73,6 +76,7 @@ padding: 10px;
  color: #af6aff;
  -webkit-text-stroke: 1px black;
  padding: 10px;
+ cursor: default;
 }
 
 .mainBut{
@@ -110,12 +114,9 @@ padding: 10px;
  border-color: black;
  border-size: 1px;
  border-radius: 6px;
- cursor: pointer;
+ cursor: text;
  text-align:center;
  margin: auto;
  display: flex;
  background-color: #8515ff;
-}
-.hider{
- display:none;
 }

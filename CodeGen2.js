@@ -1,13 +1,15 @@
 const openGen = () => {
-let login=document.getElementById("log").value.trim();
+let inputLogin=document.getElementById("log").value.trim();
 let pass=document.getElementById("pas").value;
 
  function codeLog(){
+  let login = inputLogin.replace(/[^a-z]+/gi, '')
   let abet="1234567890abcdefghijklmnopqrstuvwxyz".split("");
   let ret = document.getElementById("ret");
   let code = document.getElementById("code");
   pass.split("");
   login.split("");
+  
 
   let pN = {
    p1 : parseInt(pass[0]),
@@ -64,7 +66,10 @@ let pass=document.getElementById("pas").value;
  } else {
   ret.innerHTML="Your uniqe code is: "
   code.style.display="block";
+  code.style.cursor="text";
   code.innerHTML = sLg.l1 +"-"+ sLg.l2 +"-" + sLg.l3 +"-"+ sLg.l4 +"-"+ sLg.l5 +"-"+ sLg.l6 +"-"+ sLg.l7 +"-"+ sLg.l8
   }  
  } codeLog()
 }
+// CodeGen ver: 2.0 
+// Date: 13.06.2022
