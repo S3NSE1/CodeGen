@@ -73,4 +73,4 @@ let pass=document.getElementById("pas").value;
 }
 
 // CodeGen ver: 2.2
-// Date: 13.06.2022
+// Date: 16.06.2022
