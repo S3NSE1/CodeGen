@@ -31,9 +31,9 @@ let pass=document.getElementById("pas").value;
    l8 : abet.indexOf(login[7]) + xN,
   };
   let s5 = Math.ceil((sLg.l1 * 2) / 10 + (sLg.l2 * 2) / 10);
-  let s6 = Math.ceil((sLg.l3 * 2) / 10 + (sLg.l4 * 2) / 10);
-  let s7 = Math.ceil((sLg.l1 * 3) / 10 + (sLg.l2 * 3) / 10);
-  let s8 = Math.ceil((sLg.l3 * 3) / 10 + (sLg.l4* 3) / 10);
+  let s6 = Math.ceil((sLg.l3 * 2) / 10 + (sLg.l4 * 3) / 10);
+  let s7 = Math.ceil((sLg.l1 * 3) / 10 + (sLg.l2 * 4) / 10);
+  let s8 = Math.ceil((sLg.l3 * 3) / 10 + (sLg.l4 * 5) / 10);
   
   if(login.length === 4){
    sLg.l5 = s5
@@ -67,9 +67,10 @@ let pass=document.getElementById("pas").value;
   ret.innerHTML="Your uniqe code is: "
   code.style.display="block";
   code.style.cursor="text";
-  code.innerHTML = sLg.l1 +"-"+ sLg.l2 +"-" + sLg.l3 +"-"+ sLg.l4 +"-"+ sLg.l5 +"-"+ sLg.l6 +"-"+ sLg.l7 +"-"+ sLg.l8
+  code.innerHTML = sLg.l1 +""+ sLg.l2 +"-" + sLg.l3 +""+ sLg.l4 +"-"+ sLg.l5 +""+ sLg.l6 +"-"+ sLg.l7 +""+ sLg.l8
   }  
  } codeLog()
 }
-// CodeGen ver: 2.1
-// Date: 15.06.2022
+
+// CodeGen ver: 2.2
+// Date: 13.06.2022
